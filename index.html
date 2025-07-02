@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Bilhete</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Bilhete</h1>
+
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="toggleTheme"> Tema Escuro
+      </label>
+    </div>
+
+    <label>Data Inicial: <input type="date" id="dataInicio"></label>
+    <label>Data Final: <input type="date" id="dataFim"></label>
+
+    <label>Tipo de Jornada:
+      <select id="tipoJornada">
+        <option value="idaEVolta">Ida e Volta</option>
+        <option value="apenasIda">Apenas Ida</option>
+        <option value="apenasVolta">Apenas Volta</option>
+      </select>
+    </label>
+
+    <label>Tipo de passagem - Ida:
+      <select id="tipoIda">
+        <option value="metro">Apenas Metrô (R$ 5,20)</option>
+        <option value="onibus">Apenas Ônibus (R$ 5,00)</option>
+        <option value="integracao">Integração (R$ 8,90)</option>
+      </select>
+    </label>
+
+    <label>Tipo de passagem - Volta:
+      <select id="tipoVolta">
+        <option value="metro">Apenas Metrô (R$ 5,20)</option>
+        <option value="onibus">Apenas Ônibus (R$ 5,00)</option>
+        <option value="integracao">Integração (R$ 8,90)</option>
+      </select>
+    </label>
+
+    <label>Datas a ignorar (separe por vírgula - AAAA-MM-DD):
+      <input type="text" id="datasIgnoradas" placeholder="Ex: 2025-07-09,2025-07-10">
+    </label>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
