@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  margin: 0;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Tema escuro */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+}
